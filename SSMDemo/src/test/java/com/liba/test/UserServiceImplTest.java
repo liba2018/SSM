@@ -1,0 +1,33 @@
+package com.liba.test;
+
+import javax.annotation.Resource;
+
+import org.apache.log4j.Logger;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.liba.entity.User;
+import com.liba.service.IUserService;
+
+import junit.framework.TestCase;
+@RunWith(SpringJUnit4ClassRunner.class)     //表示继承了SpringJUnit4ClassRunner类  
+@ContextConfiguration(locations = {"classpath:spring-mybatis.xml"})
+public class UserServiceImplTest extends TestCase {
+	private static Logger logger = Logger.getLogger(UserServiceImplTest.class);
+    @Resource  
+    private IUserService userService = null;  
+  
+//  @Before  
+//  public void before() {  
+//      ac = new ClassPathXmlApplicationContext("applicationContext.xml");  
+//      userService = (IUserService) ac.getBean("userService");  
+//  }  
+  
+    @Test  
+    public void test1() {  
+    	//
+        //User user = userService.doLogin(name, password);  
+    }  
+}
