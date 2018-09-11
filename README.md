@@ -1,2 +1,2 @@
 # SSMDemo
-SSM框架整合
+SSM框架整合--maven构建
