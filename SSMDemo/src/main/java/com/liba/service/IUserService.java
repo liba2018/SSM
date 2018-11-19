@@ -1,6 +1,7 @@
 package com.liba.service;
 
-import com.liba.entity.User;
+import org.springframework.stereotype.Service;
+
 
 public interface IUserService {
 	

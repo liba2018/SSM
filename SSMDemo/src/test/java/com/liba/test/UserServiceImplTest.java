@@ -11,10 +11,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.liba.entity.User;
 import com.liba.service.IUserService;
 
-import junit.framework.TestCase;
 @RunWith(SpringJUnit4ClassRunner.class)     //表示继承了SpringJUnit4ClassRunner类  
 @ContextConfiguration(locations = {"classpath:spring-mybatis.xml"})
-public class UserServiceImplTest extends TestCase {
+public class UserServiceImplTest{
 	private static Logger logger = Logger.getLogger(UserServiceImplTest.class);
     @Resource  
     private IUserService userService = null;  
